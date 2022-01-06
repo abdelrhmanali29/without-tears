@@ -8,3 +8,6 @@
   - docker run hello-world
   - sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
   - sudo chmod g+rwx "$HOME/.docker" -R
+  
+  
+  link: https://www.codegrepper.com/code-examples/shell/run+docker-compose+without+sudo
