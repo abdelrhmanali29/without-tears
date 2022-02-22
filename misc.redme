@@ -1,0 +1,902 @@
+// const arr = [
+// 	{
+// 		x: 1,
+// 	},
+// ];
+
+// let res = arr.find((a) => a.x == 2);
+// if (!res) console.log('yes');
+
+// const fs = require('fs').promises;
+
+// function com(a, b) {
+// 	return a.toString().length - b.toString().length;
+// }
+
+// async function readFile(filePath) {
+// 	try {
+// 		const data = await fs.readFile(filePath);
+// 		const newData = data.toString().split(',').sort(com);
+
+// 		openFile(newData.toString());
+// 	} catch (error) {
+// 		console.error(`Got an error trying to read the file: ${error.message}`);
+// 	}
+// }
+
+// async function openFile(data) {
+// 	try {
+// 		await fs.writeFile('groceries.txt', data);
+// 	} catch (error) {
+// 		console.error(`Got an error trying to write to a file: ${error.message}`);
+// 	}
+// }
+
+// readFile('./tem.txt');
+// let slug = 'fc-augsburg-vs-spvgg-greuther-fürth-18156899';
+
+// let teams = slug.split('vs');
+// let localTeamName = teams[0].split('-').join(' ');
+// let visitorTeamName = teams[1].split('-');
+
+// visitorTeamName = visitorTeamName
+// 	.slice(0, visitorTeamName.length - 1)
+// 	.join(' ');
+
+// console.log(localTeamName, visitorTeamName);
+
+// let arr = [1, 4, 7, 7];
+
+// let keys = Object.keys(arr);
+// for (let key of keys) {
+// 	console.log(arr[key] - 1);
+// }
+
+// let m = 1
+
+// console.log(3 << 1);
+
+// for (var mask = 6; mask; mask >>= 1) {
+// 	console.log(mask);
+// }
+
+// const obj = {
+// 	x: 1,
+// };
+// console.log(obj?.y);
+
+// const obj = {
+// 	x: {
+// 		y: { c: 3 },
+// 		z: { c: 3 },
+// 	},
+// };
+
+// const obj = {
+// 	x: {
+// 		y: { c: 3 },
+// 		z: { c: 3 },
+// 	},
+// };
+
+// let z = 'z',
+// 	x = 'x',
+// 	y = 'y',
+// 	c = 'c';
+
+// let arr = ['x', 'y', 'c'];
+
+// obj[arr[0]][arr[1]][arr[2]] = 4;
+// // obj[x][z][c] = 2;
+
+// console.log(obj);
+// const calculateAttributeScore = (stats) => {
+// 	let numerator = stats.reduce((currentItem, result = 0) => {
+// 		if (currentItem) result += currentItem;
+// 		return result;
+// 	}, 0);
+
+// 	let denominator = stats.length * 10;
+
+// 	return Math.ceil(parseFloat((numerator / denominator) * 100));
+// };
+
+// console.log(calculateAttributeScore([5, undefined]));
+
+// const arr = [
+// 	'cf',
+// 	'rwf',
+// 	'lwf',
+// 	'amf',
+// 	'lamf',
+// 	'ramf',
+// 	'lw',
+// 	'rw',
+// 	'lcmf3',
+// 	'rcmf3',
+// 	'rcmf',
+// 	'lcmf',
+// 	'dmf',
+// 	'rdmf',
+// 	'ldmf',
+// 	'cb',
+// 	'lcb',
+// 	'rcb',
+// 	'lcb3',
+// 	'rcb3',
+// 	'rb',
+// 	'rwb',
+// 	'rb5',
+// 	'lwb',
+// 	'lb',
+// 	'lb5',
+// ];
+
+// if (!arr.includes('cb')) console.log('yes');
+
+// String.prototype.hashCode = function () {
+// 	var hash = 0,
+// 		i,
+// 		chr;
+// 	if (this.length === 0) return hash;
+// 	for (i = 0; i < this.length; i++) {
+// 		chr = this.charCodeAt(i);
+// 		hash = (hash << 5) - hash + chr;
+// 		hash |= 0; // Convert to 32bit integer
+// 	}
+// 	return hash;
+// };
+
+// const st = 'ASD';
+// console.log(st.hashCode());
+
+// const axios = require('axios');
+
+// const arr = [
+// 	'Versatility.svg',
+// 	'Finishing.svg',
+// 	'World Class.svg',
+// 	'Fitness.svg',
+// 	'International Experience.svg',
+// 	'Uses both feet.svg',
+// 	'Set Piece Specialist.svg',
+// 	'Penalty Specialist.svg',
+// 	'Clinical Striker.svg',
+// 	'Goal scoring Defender.svg',
+// 	'Excellent Dribblers.svg',
+// 	'Pass Master.svg',
+// 	'Brick Wall (best defenders).svg',
+// 	'Tenacious Midfielder (best at duels).svg',
+// 	'Leading St, Mid, Def.svg',
+// 	'Dominant Player.svg',
+// 	'Formidible Player.svg',
+// 	'Valuable Player.svg',
+// 	'Injury Prone.svg',
+// 	'Inconsistent.svg',
+// 	'Poor Big Match Perfo...svg',
+// 	'Getsa lot of cards.svg',
+// ];
+
+// let newArr = [];
+
+// arr.forEach((item) => {
+// 	newArr.push(item.split(' ').join('_'));
+// });
+
+// const links = [];
+// for (let icon of newArr) {
+// }
+
+// console.log(links);
+// const getUpperBound = (array, value) => {
+// 	let left = 0,
+// 		right = array.length - 1;
+// const x = {
+// 	y: 2,
+// };
+
+// let c = 'z';
+// if (!x[c]) console.log('asasf');
+
+// const getUpperBound = (array, value) => {
+// 	let left = 0,
+// 		right = array.length - 1;
+
+// 	while (left < right) {
+// 		let current = (left + right) >> 1;
+// 		console.log(arr[current]);
+
+// 		if (array[current] <= value) left = current + 1;
+// 		else if (array[current] > value) right = current;
+// 	}
+
+// 	return right;
+// };
+
+// let arr = [1, 2, 3, 4, 6, 4, 5, 4, 7, 8, 10, 11, 12];
+// console.log(arr.length);
+
+// console.log(arr[getUpperBound(arr, 5)]);
+
+// const getPlayerOverAllRating = (playerStats, positionsCode) => {
+// 	const positionsRate = {
+// 		strikers: {
+// 			finishing: 1,
+// 			offTheBallMovement: 1,
+// 			finalThirdPassing: 0.9,
+// 			crossing: 0.9,
+// 			dribbling: 0.9,
+// 			foulWinning: 0.7,
+// 			passingEfficiency: 0.7,
+// 			defensiveIntensity: 0.6,
+// 			recovery: 0.6,
+// 			boxDefending: 0,
+// 			aerialAbility: 0.8,
+// 			defensiveDuels: 0.6,
+// 			offensiveDuels: 0.8,
+// 			GKShotStoppingAbility: 0,
+// 			GKActivenessOffTheLine: 0,
+// 			GKDistribution: 0,
+// 			penalties: 0.7,
+// 			setPieces: 0,
+// 		},
+// 		wingers: {
+// 			finishing: 0.85,
+// 			offTheBallMovement: 0.85,
+// 			finalThirdPassing: 0.9,
+// 			crossing: 0.9,
+// 			dribbling: 0.9,
+// 			foulWinning: 0.8,
+// 			passingEfficiency: 0.7,
+// 			defensiveIntensity: 0.6,
+// 			recovery: 0.6,
+// 			boxDefending: 0,
+// 			aerialAbility: 0.5,
+// 			defensiveDuels: 0.6,
+// 			offensiveDuels: 0.85,
+// 			GKShotStoppingAbility: 0,
+// 			GKActivenessOffTheLine: 0,
+// 			GKDistribution: 0,
+// 			penalties: 0,
+// 			setPieces: 0.7,
+// 		},
+// 		midfielders: {
+// 			finishing: 0.6,
+// 			offTheBallMovement: 0.6,
+// 			finalThirdPassing: 0.7,
+// 			crossing: 0.6,
+// 			dribbling: 0.7,
+// 			foulWinning: 0.7,
+// 			passingEfficiency: 1,
+// 			defensiveIntensity: 1,
+// 			recovery: 1,
+// 			boxDefending: 0.6,
+// 			aerialAbility: 0.7,
+// 			defensiveDuels: 0.9,
+// 			offensiveDuels: 0.7,
+// 			GKShotStoppingAbility: 0,
+// 			GKActivenessOffTheLine: 0,
+// 			GKDistribution: 0,
+// 			penalties: 0,
+// 			setPieces: 0.5,
+// 		},
+// 		fullbacks: {
+// 			finishing: 0.5,
+// 			offTheBallMovement: 0.5,
+// 			finalThirdPassing: 1,
+// 			crossing: 1,
+// 			dribbling: 0.7,
+// 			foulWinning: 0.5,
+// 			passingEfficiency: 0.8,
+// 			defensiveIntensity: 0.9,
+// 			recovery: 0.9,
+// 			boxDefending: 0.7,
+// 			aerialAbility: 0.7,
+// 			defensiveDuels: 0.8,
+// 			offensiveDuels: 0.7,
+// 			GKShotStoppingAbility: 0,
+// 			GKActivenessOffTheLine: 0,
+// 			GKDistribution: 0,
+// 			penalties: 0,
+// 			setPieces: 0,
+// 		},
+// 		centreBacks: {
+// 			finishing: 0,
+// 			offTheBallMovement: 0,
+// 			finalThirdPassing: 0.5,
+// 			crossing: 0,
+// 			dribbling: 0.5,
+// 			foulWinning: 0,
+// 			passingEfficiency: 0.9,
+// 			defensiveIntensity: 0.9,
+// 			recovery: 1,
+// 			boxDefending: 1,
+// 			aerialAbility: 1,
+// 			defensiveDuels: 1,
+// 			offensiveDuels: 0,
+// 			GKShotStoppingAbility: 0,
+// 			GKActivenessOffTheLine: 0,
+// 			GKDistribution: 0,
+// 			penalties: 0,
+// 			setPieces: 0,
+// 		},
+// 		goalKeepers: {
+// 			finishing: 0,
+// 			offTheBallMovement: 0,
+// 			finalThirdPassing: 0,
+// 			crossing: 0,
+// 			dribbling: 0,
+// 			foulWinning: 0,
+// 			passingEfficiency: 0,
+// 			defensiveIntensity: 0,
+// 			recovery: 0,
+// 			boxDefending: 0,
+// 			aerialAbility: 0,
+// 			defensiveDuels: 0,
+// 			offensiveDuels: 0,
+// 			GKShotStoppingAbility: 1,
+// 			GKActivenessOffTheLine: 1,
+// 			GKDistribution: 1,
+// 			penalties: 0,
+// 			setPieces: 0,
+// 		},
+// 	};
+
+// 	const positionsFunctions = {
+// 		strikers: (attributes) => {
+// 			return multiplyTwoObject(attributes, positionsRate['strikers']);
+// 		},
+// 		wingers: (attributes) => {
+// 			return multiplyTwoObject(attributes, positionsRate['wingers']);
+// 		},
+// 		midfielders: (attributes) => {
+// 			return multiplyTwoObject(attributes, positionsRate['midfielders']);
+// 		},
+// 		fullbacks: (attributes) => {
+// 			return multiplyTwoObject(attributes, positionsRate['fullbacks']);
+// 		},
+// 		centreBacks: (attributes) => {
+// 			return multiplyTwoObject(attributes, positionsRate['centreBacks']);
+// 		},
+// 		goalKeepers: (attributes) => {
+// 			return multiplyTwoObject(attributes, positionsRate['goalKeepers']);
+// 		},
+// 	};
+
+// 	const positionsCases = {
+// 		cf: (playerStats) => positionsFunctions['strikers'](playerStats.attributes),
+// 		rwf: (playerStats) =>
+// 			positionsFunctions['strikers'](playerStats.attributes),
+// 		lwf: (playerStats) =>
+// 			positionsFunctions['strikers'](playerStats.attributes),
+
+// 		// wingers
+// 		amf: (playerStats) => positionsFunctions['wingers'](playerStats.attributes),
+// 		lamf: (playerStats) =>
+// 			positionsFunctions['wingers'](playerStats.attributes),
+// 		ramf: (playerStats) =>
+// 			positionsFunctions['wingers'](playerStats.attributes),
+// 		lw: (playerStats) => positionsFunctions['wingers'](playerStats.attributes),
+// 		rw: (playerStats) => positionsFunctions['wingers'](playerStats.attributes),
+
+// 		// midfielders
+// 		lcmf3: (playerStats) =>
+// 			positionsFunctions['midfielders'](playerStats.attributes),
+// 		rcmf3: (playerStats) =>
+// 			positionsFunctions['midfielders'](playerStats.attributes),
+// 		rcmf: (playerStats) =>
+// 			positionsFunctions['midfielders'](playerStats.attributes),
+// 		lcmf: (playerStats) =>
+// 			positionsFunctions['midfielders'](playerStats.attributes),
+// 		dmf: (playerStats) =>
+// 			positionsFunctions['midfielders'](playerStats.attributes),
+// 		rdmf: (playerStats) =>
+// 			positionsFunctions['midfielders'](playerStats.attributes),
+// 		ldmf: (playerStats) =>
+// 			positionsFunctions['midfielders'](playerStats.attributes),
+
+// 		// fullbacks
+// 		rb: (playerStats) =>
+// 			positionsFunctions['fullbacks'](playerStats.attributes),
+// 		rwb: (playerStats) =>
+// 			positionsFunctions['fullbacks'](playerStats.attributes),
+// 		rb5: (playerStats) =>
+// 			positionsFunctions['fullbacks'](playerStats.attributes),
+// 		lwb: (playerStats) =>
+// 			positionsFunctions['fullbacks'](playerStats.attributes),
+// 		lb: (playerStats) =>
+// 			positionsFunctions['fullbacks'](playerStats.attributes),
+// 		lb5: (playerStats) =>
+// 			positionsFunctions['fullbacks'](playerStats.attributes),
+
+// 		// center backs
+// 		cb: (playerStats) =>
+// 			positionsFunctions['centreBacks'](playerStats.attributes),
+// 		lcb: (playerStats) =>
+// 			positionsFunctions['centreBacks'](playerStats.attributes),
+// 		rcb: (playerStats) =>
+// 			positionsFunctions['centreBacks'](playerStats.attributes),
+// 		lcb3: (playerStats) =>
+// 			positionsFunctions['centreBacks'](playerStats.attributes),
+// 		rcb3: (playerStats) =>
+// 			positionsFunctions['centreBacks'](playerStats.attributes),
+
+// 		// goolkeepers
+// 		gk: (playerStats) =>
+// 			positionsFunctions['goalKeepers'](playerStats.attributes),
+// 	};
+
+// 	const positionsNames = {
+// 		cf: 'strikers',
+// 		rwf: 'strikers',
+// 		lwf: 'strikers',
+
+// 		// wingers
+// 		amf: 'wingers',
+// 		lamf: 'wingers',
+// 		ramf: 'wingers',
+// 		lw: 'wingers',
+// 		rw: 'wingers',
+
+// 		// midfielders
+// 		lcmf3: 'midfielders',
+// 		rcmf3: 'midfielders',
+// 		rcmf: 'midfielders',
+// 		lcmf: 'midfielders',
+// 		dmf: 'midfielders',
+// 		rdmf: 'midfielders',
+// 		ldmf: 'midfielders',
+
+// 		// fullbacks
+// 		rb: 'fullbacks',
+// 		rwb: 'fullbacks',
+// 		rb5: 'fullbacks',
+// 		lwb: 'fullbacks',
+// 		lb: 'fullbacks',
+// 		lb5: 'fullbacks',
+
+// 		// center backs
+// 		cb: 'centreBacks',
+// 		lcb: 'centreBacks',
+// 		rcb: 'centreBacks',
+// 		lcb3: 'centreBacks',
+// 		rcb3: 'centreBacks',
+
+// 		// goolkeepers
+// 		gk: 'goalKeepers',
+// 	};
+
+// 	let positionName = positionsNames[positionsCode];
+// 	const newAttributes = positionsCases[positionsCode](playerStats);
+// 	const positionPossible = getPositionPossibleScore(positionName);
+
+// 	const result = sumObjectKeys(newAttributes);
+
+// 	return ((result / positionPossible) * 100).toFixed(0);
+// };
+
+// const multiplyTwoObject = (object1, object2) => {
+// 	let result = { ...object1 };
+
+// 	for (let key in object1) {
+// 		result[key] = object1[key] * object2[key];
+// 	}
+
+// 	return result;
+// };
+
+// const sumObjectKeys = (object) => {
+// 	let result = 0;
+
+// 	for (let key in object) {
+// 		if (!isNaN(object[key])) result += object[key];
+// 	}
+
+// 	return result;
+// };
+// const getPositionPossibleScore = (positionName) => {
+// 	const possible = {
+// 		strikers: 1020,
+// 		wingers: 975,
+// 		midfielders: 1030,
+// 		fullbacks: 970,
+// 		centreBacks: 680,
+// 		goalKeepers: 300,
+// 	};
+
+// 	return possible[positionName];
+// };
+
+// const playerStats = {
+// 	attributes: {
+// 		finishing: 90,
+// 		offTheBallMovement: 95,
+// 		finalThirdPassing: 70,
+// 		crossing: 56,
+// 		buildUpPassing: 50,
+// 		dribbling: 67,
+// 		foulWinning: 60,
+// 		passingEfficiency: 54,
+// 		defensiveIntensity: 53,
+// 		recovery: 57,
+// 		aerialAbility: 80,
+// 		boxDefending: 53,
+// 		groundDuelWinningAbility: 62,
+// 		GKShotStoppingAbility: 0,
+// 		GKActivenessOffTheLine: 0,
+// 		GKDistribution: 40,
+// 		penalties: 0,
+// 		setPieces: 19,
+// 		defensiveDuels: 53,
+// 		offensiveDuels: 70,
+// 	},
+// };
+
+// console.log(getPlayerOverAllRating(playerStats, 'cf'));
+// const sum = (x, y) => {
+// 	return x + y;
+// };
+
+// const sub = (x, y) => {
+// 	return x + y;
+// };
+
+// const perform = {
+// 	'+': (x, y) => {
+// 		return x + y;
+// 	},
+// 	'-': (x, y) => {
+// 		return x - y;
+// 	},
+// };
+
+// let arr = [
+// 	{ sign: '-', x: 2, y: 3 },
+// 	{ sign: '+', x: 2, y: 3 },
+// ];
+
+// for (let item of arr) {
+// 	console.log(perform[item.sign](item.x, item.y));
+// }
+
+// function makeError(name) {
+// 	const error = new Error(`Error from ${name}`);
+// 	return error;
+// }
+
+// const testFn = (value, name) =>
+// 	value ? Promise.resolve(value) : Promise.reject(makeError(name));
+
+// const forAsync = async () => {
+// 	let arr = ['two', null, 'three'];
+
+// 	// for (let i = 0; i < arr.length; i++) {
+// 	// 	try {
+// 	// 		console.log(await testFn(arr[i], i, arr[i]));
+// 	// 	} catch (error) {
+// 	// 		console.log(error);
+// 	// 	}
+// 	// }
+
+// 	// try {
+// 	// 	for (let i = 0; i < arr.length; i++) {
+// 	// 		console.log(await testFn(arr[i], arr[i]));
+// 	// 	}
+// 	// } catch (error) {
+// 	// 	console.log(error);
+// 	// }
+
+// 	for (let i = 0; i < arr.length; i++) {
+// 		const res = await testFn(arr[i], arr[i]).catch((err) => console.log(err));
+// 		res ? console.log(res) : 0;
+// 	}
+
+// console.log(await Promise.reject(1).catch((err) => console.log(err)));
+// };
+
+// forAsync();
+
+// let s = '04:59:59AM';
+// let status = s[s.length - 2];
+
+// s = s.slice(0, s.length - 2);
+// let hours = s.split(':')[0];
+// let minutes = s.split(':')[1];
+// let seconds = s.split(':')[2];
+
+// if (status == 'P') {
+// 	hours = parseInt(hours);
+// 	if (hours < 12) hours += 12;
+// } else if (status == 'A') {
+// 	hours = parseInt(hours);
+// 	if (hours == 12) hours = '00';
+// }
+
+// console.log(`${hours}:${minutes}:${seconds}`);
+
+// // /**
+// //  * @param {number[]} numbers An array of numbers.
+// //  * @return {number[]} An array of unique numbers.
+// //  */
+// function findUniqueNumbers(numbers) {
+// 	// Your code goes here
+
+// 	let map = {};
+// 	let result = [];
+
+// 	for (let number of numbers) {
+// 		if (map.hasOwnProperty(number.toString())) map[number.toString()]++;
+// 		else map[number.toString()] = 1;
+// 	}
+
+// 	let keys = Object.keys(map);
+// 	for (let key of keys) {
+// 		if (map[key] == 1) result.push(parseInt(key));
+// 	}
+
+// 	return result;
+// }
+
+// let result = findUniqueNumbers([1, 2, 1, 3]);
+// console.log(result);
+
+// function matchKeyCombo(sequence) {
+// 	// Your code goes here
+// 	let qeeCount = 0,
+// 		zccCount = 0;
+// 	let qee = 'QEE',
+// 		zcc = 'ZCC';
+
+// 	for (let i = 0; i < sequence.length - 2; i++) {
+// 		let newSubstring = '';
+// 		for (let j = i; j <= i + 2; j++) {
+// 			newSubstring += sequence[j];
+// 		}
+// 		if (newSubstring === 'QEE' || newSubstring === 'qee') qeeCount++;
+// 		if (newSubstring === 'ZCC' || newSubstring === 'zcc') zccCount++;
+// 	}
+
+// 	if (qeeCount === zccCount) return true;
+// 	else return false;
+// }
+
+// console.log(matchKeyCombo('QEEAZCC'));
+
+// function numberOfItems(arr, item) {
+// 	// Write the code that goes here
+// const findMaxDepth = (object, currentDepth, maxDepth) => {
+// 	// console.log(currentDepth, maxDepth);
+
+// 	if (typeof object !== 'object' || object === null || object === undefined)
+// 		return maxDepth;
+
+// 	if (currentDepth > maxDepth) maxDepth = currentDepth;
+
+// 	let keys = Object.keys(object);
+
+// 	for (let key of keys) {
+// 		currentDepth++;
+// console.log(key, object[key]);
+// console.log('-======');
+// 		maxDepth = findMaxDepth(object[key], currentDepth, maxDepth);
+
+// 		currentDepth--;
+// 	}
+
+// 	return maxDepth;
+// };
+
+// const obj = {
+// 	x: {
+// 		y: {
+// 			c: {
+// 				v: 1,
+// 			},
+// 		},
+// 		yf: {
+// 			c: {
+// 				v: {
+// 					b: 1,
+// 					n: 2,
+// 				},
+// 				m: 3,
+// 			},
+// 		},
+// 		yy: 1,
+// 	},
+// 	xx: 1,
+// };
+
+// console.log(findMaxDepth(obj, 0, 0));
+
+// const { isArray } = require('lodash');
+
+// let x = {
+// 	y: {
+// 		z: {
+// 			c: 5,
+// 		},
+// 	},
+// 	b: 4,
+// };
+
+// let arr = ['y', 'z', 'c'];
+
+// for (let index of arr) {
+// 	arr[0] = 1;
+// }
+
+// x = [1, 2, 3];
+
+// let p = { ...x };
+// let e = x;
+
+// p.b = 10;
+// console.log(isArray(p));
+// e[0] = 3;
+// console.log(x);
+
+// console.log(x['y']['z']['c']);
+
+// 	let count = 0;
+
+// 	if (!Array.isArray(arr)) return;
+
+// 	for (let element of arr) {
+// 		if (Array.isArray(element)) count += numberOfItems(element, item);
+// 		else if (element === item) count++;
+// 	}
+
+// 	return count;
+// }
+
+// var arr = [25, 'apple', ['banana', 'strawberry', 'apple', 25]];
+// console.log(numberOfItems(arr, 25));
+// console.log(numberOfItems(arr, 'apple'));
+
+// const { isArray } = require('lodash');
+
+// let x = {
+// 	y: {
+// 		z: {
+// 			c: 5,
+// 		},
+// 	},
+// 	b: 4,
+// };
+
+// let arr = ['y', 'z', 'c'];
+
+// for (let index of arr) {
+// 	arr[0] = 1;
+// }
+
+// x = [1, 2, 3];
+
+// let p = { ...x };
+// let e = x;
+
+// p.b = 10;
+// console.log(isArray(p));
+// e[0] = 3;
+// console.log(x);
+
+// console.log(x['y']['z']['c']);
+
+// console.log(
+// 	[1, 2, 3, 4].reduce((currentItem, result) => {
+// 		result += currentItem;
+// 		return result;
+// 	}, 0)
+// );
+
+// const percentile = (r, n) => {
+// 	if (!n) return 0;
+
+// 	return ((100 * r) / n).toFixed(2);
+// };
+
+// console.log(percentile(5, 8));
+
+// const cheerio = require('cheerio');
+// const axios = require('axios');
+
+// const getLinks = async () => {
+// 	const response = await axios.get(
+// 		'https://www.uefa.com/memberassociations/uefarankings/country/#/yr/2022'
+// 	);
+
+// 	const $ = cheerio.load(response.data);
+
+// 	console.log($('tr').children().first());
+
+// 	let countries = [];
+
+// 	$('tr').each((_idx, el) => {
+// 		console.log(el);
+// 		let country = {};
+// 		country.rank = $(el).attr('data-rank');
+// 		country.name = $(el).find('.team-name').text();
+
+// 		countries.push(country);
+// 	});
+
+// 	console.log(countries);
+// };
+
+// setInterval(async () => {
+// 	await getLinks();
+// }, 1000);
+
+// const getUpperBound = (array, value) => {
+// 	let left = 0,
+// 		right = array.length - 1;
+
+// 	while (left < right) {
+// 		let current = (left + right) >> 1;
+
+// 		console.log(left, current, right);
+
+// 		if (array[current] <= value) left = current + 1;
+// 		else if (array[current] > value) right = current;
+// 	}
+
+// 	return right;
+// };
+
+// console.log(getUpperBound([1, 3, 4, 4, 5, 6, 7, 8], 3));
+// console.log(getUpperBound([1, 3, 4, 4, 5, 6, 7, 8], 3));
+
+// const ct = require('countries-and-timezones');
+
+// const momenttz = require('moment-timezone');
+// const moment = require('moment');
+
+// const timezones = momenttz.tz.names();
+// // console.log(timezones.length);
+
+// const offsets = {};
+// const timeZoneCountries = {};
+// let max = 0;
+
+// for (let timezone of timezones) {
+// 	const offset = moment.tz(moment.utc(), timezone.toString()).utcOffset();
+// 	const countries = ct.getCountriesForTimezone(timezone, toString());
+
+// 	timeZoneCountries[timezone.toString()] = countries.length;
+// 	if (countries.length > max) max = countries.length;
+
+// if (offsets.hasOwnProperty(offset.toString())) {
+// 	offsets[offset.toString()]++;
+// } else {
+// 	offsets[offset.toString()] = 1;
+// }
+// }
+
+// console.log(Object.keys(offsets).length);
+// console.log(timeZoneCountries);
+// console.log(max);
+
+// const swapObjectKeys = (object) => {
+// 	if (typeof object !== 'object') return;
+
+// 	let keys = Object.keys(object);
+
+// 	for (let key of keys) {
+// 		if (typeof object[key] === 'object')
+// 			object[key] = swapObjectKeys(object[key]);
+// 		swapObjectAttributes(object[key]);
+// 	}
+
+// 	return object;
+// };
+
+// const swapObjectAttributes = (object) => {
+// 	let temp = object.home;
+// 	object.home = object.away;
+// 	object.away = temp;
+// };
+
+// const newObject = swapObjectKeys(dataObject);
+
+// console.log(newObject);
