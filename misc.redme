@@ -1,3 +1,23 @@
+const million = 1000000;
+const arr = Array(million);
+
+console.time('FOR reverse');
+for (let i = arr.length; i > 0; i--) {}
+console.timeEnd('FOR reverse');
+
+console.time('FOR');
+for (let i = 0; i < arr.length; i++) {}
+console.timeEnd('FOR');
+
+console.time('FOREACH');
+arr.forEach((v) => v);
+console.timeEnd('FOREACH');
+
+console.time('FOROF');
+for (const v of arr) {
+}
+console.timeEnd('FOROF');
+
 // const arr = [
 // 	{
 // 		x: 1,
